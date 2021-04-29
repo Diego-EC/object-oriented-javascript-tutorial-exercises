@@ -10,7 +10,13 @@ class Person{
 	    return Math.abs(ageDate.getUTCFullYear() - 1970);
 	}
 	
-	
+	canDrinkAlcohol(){
+        let age = this.getAge();
+        if (age >= 21) {
+            return true;
+        }
+        return false;
+    }
 }
 
 let mario = new Person(1985, 10, 20);
